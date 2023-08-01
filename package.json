@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "nx serve",
+    "dev:api": "nx serve api",
+    "dev:client": "nx serve client",
+    "build": "nx build",
+    "test": "nx test",
     "commit": "cz"
   },
   "private": true,
