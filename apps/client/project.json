@@ -25,8 +25,7 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "client:build",
-        "proxyConfig": "apps/client/proxy.conf.json",
-        "host": "0.0.0.0"
+        "proxyConfig": "apps/client/proxy.conf.json"
       },
       "configurations": {
         "development": {

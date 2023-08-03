@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app-base:
+    restart: always
+    build: ./
+    environment:
+      - DEV_PLATFORM=docker
+    volumes:
+      - ./:/duty-dealer
+      - node-modules:/duty-dealer/node_modules

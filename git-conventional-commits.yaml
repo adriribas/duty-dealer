@@ -13,7 +13,7 @@ convention:
     - chore
     - merge
     - revert
-  commitScopes: [api, client]
+  commitScopes: [api, client, docker]
   releaseTagGlobPattern: v[0-9]*.[0-9]*.[0-9]*
 
 changelog:

@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  client:
+    extends:
+      file: docker-compose.base.yml
+      service: app-base
+    depends_on:
+      - api
+    command: npm run dev:client
+    ports:
+      - 3100:3000
+    environment:
+      - PORT=3000
+
+  api:
+    extends:
+      file: docker-compose.base.yml
+      service: app-base
+    command: npm run dev:api
+    ports:
+      - 8100:8000
+    environment:
+      - PORT=8000
+
+volumes:
+  node-modules: null

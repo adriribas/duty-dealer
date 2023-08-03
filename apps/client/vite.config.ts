@@ -7,13 +7,17 @@ export default defineConfig({
   cacheDir: '../../node_modules/.vite/client',
 
   server: {
-    port: 4200,
-    host: 'localhost',
+    port: 3000,
+    host: '0.0.0.0',
+    watch: {
+      // Polling mode for HMR cross-OS Linux (Docker) - Windows
+      usePolling: process.env.DEV_PLATFORM === 'docker',
+    },
   },
 
   preview: {
-    port: 4300,
-    host: 'localhost',
+    port: 3800,
+    host: '0.0.0.0',
   },
 
   plugins: [react(), nxViteTsPaths()],
