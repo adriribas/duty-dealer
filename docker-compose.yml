@@ -22,6 +22,7 @@ services:
       - 8100:8000
     environment:
       - PORT=8000
+      - GLOBAL_PREFIX=api
 
 volumes:
-  node-modules: null
+  node_modules: null

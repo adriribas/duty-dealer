@@ -8,4 +8,4 @@ services:
       - DEV_PLATFORM=docker
     volumes:
       - ./:/duty-dealer
-      - node-modules:/duty-dealer/node_modules
+      - node_modules:/duty-dealer/node_modules
